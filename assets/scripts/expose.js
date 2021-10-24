@@ -32,7 +32,7 @@ function init() {
 
   playButton.addEventListener('click', (event) =>{
     hornAudio.play(); 
-    if(hornSelect.value == "party-horn")
+    if(hornSelect.value == "party-horn" && hornAudio.volume != 0)
     {
       jsConfetti.addConfetti();
     }
